@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hulklab/yago/coms/locker/lock"
+	"github.com/goees/yago/coms/locker/lock"
 
-	"github.com/hulklab/yago/coms/locker"
+	"github.com/goees/yago/coms/locker"
 
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 )
 
 type BaseTask struct{}

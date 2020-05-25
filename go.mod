@@ -1,4 +1,4 @@
-module github.com/hulklab/yago
+module github.com/goees/yago
 
 go 1.12
 

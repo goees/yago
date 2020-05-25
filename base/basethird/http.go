@@ -18,9 +18,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 
-	"github.com/hulklab/yago/coms/logger"
+	"github.com/goees/yago/coms/logger"
 	"github.com/levigross/grequests"
 	"github.com/sirupsen/logrus"
 )
@@ -200,7 +200,7 @@ func (a *HttpThird) newRo() *grequests.RequestOptions {
 
 	ro := &grequests.RequestOptions{
 		HTTPClient: a.getClient(),
-		UserAgent:  "github.com-hulklab-yago",
+		UserAgent:  "github.com-goees-yago",
 	}
 
 	if a.Hostname != "" {

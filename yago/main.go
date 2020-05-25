@@ -90,7 +90,7 @@ func GenFile(src, dest, app string) (err error) {
 		return err
 	}
 
-	contentStr := strings.ReplaceAll(string(content), "github.com/hulklab/yago/example", app)
+	contentStr := strings.ReplaceAll(string(content), "github.com/goees/yago/example", app)
 
 	if _, err := dstFile.WriteString(contentStr); err != nil {
 		return err
@@ -137,9 +137,9 @@ var initCmd = &cobra.Command{
 		}
 		var src string
 		if useMod {
-			src = filepath.Join(getGoPath(), "pkg", "mod", "github.com", "hulklab", "yago@"+Version, "example")
+			src = filepath.Join(getGoPath(), "pkg", "mod", "github.com", "goees", "yago@"+Version, "example")
 		} else {
-			src = filepath.Join(getGoPath(), "src", "github.com", "hulklab", "yago", "example")
+			src = filepath.Join(getGoPath(), "src", "github.com", "goees", "yago", "example")
 		}
 		dest := app
 

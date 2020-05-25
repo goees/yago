@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/coms/locker/lock"
+	"github.com/goees/yago"
+	"github.com/goees/yago/coms/locker/lock"
 
-	"github.com/hulklab/yago/coms/etcd"
+	"github.com/goees/yago/coms/etcd"
 	"go.etcd.io/etcd/clientv3/concurrency"
 )
 

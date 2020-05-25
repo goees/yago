@@ -5,10 +5,11 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"sync"
 
-	"github.com/hulklab/yago/libs/arr"
+	"github.com/goees/yago/libs/arr"
 
 	"github.com/spf13/viper"
 	//_ "github.com/spf13/viper/remote"
@@ -131,7 +132,11 @@ func Hostname() string {
 
 func defaultCfgPath() string {
 	defaultDir, _ := filepath.Abs(filepath.Dir(os.Args[0]))
-	return fmt.Sprintf("%s/app.toml", defaultDir)
+	if runtime.GOOS == "windows" {
+		return fmt.Sprintf("%s\\app.toml", defaultDir)
+	} else {
+		return fmt.Sprintf("%s/app.toml", defaultDir)
+	}
 }
 
 var cfgPath *string

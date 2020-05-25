@@ -5,7 +5,7 @@ import (
 
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 )
 
 func registerPhoneValidator(v *validator.Validate) {

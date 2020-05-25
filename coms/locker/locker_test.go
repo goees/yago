@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hulklab/yago/coms/locker/lock"
+	"github.com/goees/yago/coms/locker/lock"
 
-	"github.com/hulklab/yago/example/app/g"
+	"github.com/goees/yago/example/app/g"
 
-	"github.com/hulklab/yago"
-	_ "github.com/hulklab/yago/coms/locker/etcd"
+	"github.com/goees/yago"
+	_ "github.com/goees/yago/coms/locker/etcd"
 )
 
 // go test -v . -args "-c=${APP_PATH}/app.toml"

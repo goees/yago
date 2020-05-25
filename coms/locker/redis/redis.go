@@ -7,13 +7,13 @@ import (
 	"log"
 	"time"
 
-	"github.com/hulklab/yago/libs/str"
+	"github.com/goees/yago/libs/str"
 
-	"github.com/hulklab/yago/coms/locker/lock"
+	"github.com/goees/yago/coms/locker/lock"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/coms/rds"
+	"github.com/goees/yago"
+	"github.com/goees/yago/coms/rds"
 )
 
 const timeDelta = 0

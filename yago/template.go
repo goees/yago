@@ -5,8 +5,8 @@ var HttpTemplate = `package {{PACKAGE}}
 import (
 	"net/http"
 
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basehttp"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basehttp"
 )
 
 type {{NAME}}Http struct {
@@ -29,9 +29,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 
-	pb "github.com/hulklab/yago/example/app/modules/home/homerpc/homepb"
+	pb "github.com/goees/yago/example/app/modules/home/homerpc/homepb"
 )
 
 type {{NAME}}Rpc struct {
@@ -51,8 +51,8 @@ func (r *{{NAME}}Rpc) Hello(ctx context.Context, in *pb.HelloRequest) (*pb.Hello
 var CmdTemplate = `package {{PACKAGE}} 
 
 import (
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basecmd"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basecmd"
 	"github.com/spf13/cobra"
 )
 
@@ -77,8 +77,8 @@ func (c *{{NAME}}Cmd) DemoAction(cmd *cobra.Command, args []string) {
 var TaskTemplate = `package {{PACKAGE}} 
 
 import (
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basetask"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basetask"
 )
 
 type {{NAME}}Task struct {

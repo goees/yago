@@ -18,7 +18,7 @@
 ##### 首先你需要安装 [Go](https://golang.org/) (**version 1.11+**), 然后执行go get 安装yago
 
 ```bash
- go get github.com/hulklab/yago/yago
+ go get github.com/goees/yago/yago
 ```
 ## 依赖
 go >= 1.11(由于使用了 go mod 管理版本依赖)

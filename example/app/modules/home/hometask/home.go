@@ -4,8 +4,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basetask"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basetask"
 )
 
 type HomeTask struct {

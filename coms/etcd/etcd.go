@@ -3,7 +3,7 @@ package etcd
 import (
 	"crypto/tls"
 	"crypto/x509"
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 	"go.etcd.io/etcd/clientv3"
 	"io/ioutil"
 	"log"

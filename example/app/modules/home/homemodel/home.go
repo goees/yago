@@ -1,12 +1,12 @@
 package homemodel
 
 import (
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/coms/orm"
-	"github.com/hulklab/yago/example/app/g"
-	"github.com/hulklab/yago/libs/date"
+	"github.com/goees/yago"
+	"github.com/goees/yago/coms/orm"
+	"github.com/goees/yago/example/app/g"
+	"github.com/goees/yago/libs/date"
 
-	"github.com/hulklab/yago/example/app/modules/home/homedao"
+	"github.com/goees/yago/example/app/modules/home/homedao"
 )
 
 type HomeModel struct {

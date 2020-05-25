@@ -7,8 +7,8 @@ import (
 
 	"github.com/Shopify/sarama"
 	cluster "github.com/bsm/sarama-cluster"
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/libs/str"
+	"github.com/goees/yago"
+	"github.com/goees/yago/libs/str"
 )
 
 type Kafka struct {
