@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"
+	_ "github.com/goees/go-mysql"
 	"github.com/goees/yago"
 	"github.com/goees/yago/coms/logger"
 	"github.com/sirupsen/logrus"

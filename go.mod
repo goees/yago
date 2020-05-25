@@ -15,7 +15,7 @@ require (
 	github.com/go-playground/locales v0.13.0
 	github.com/go-playground/universal-translator v0.17.0
 	github.com/go-playground/validator/v10 v10.0.1
-	github.com/go-sql-driver/mysql v1.4.1
+	github.com/goees/go-mysql v1.5.1
 	github.com/go-xorm/xorm v0.7.6
 	github.com/golang/protobuf v1.3.2
 	github.com/google/go-querystring v1.0.0 // indirect
