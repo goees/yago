@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/libs/validatelib"
+	"github.com/goees/yago"
+	"github.com/goees/yago/libs/validatelib"
 
 	"github.com/go-playground/validator/v10"
 )

@@ -2,7 +2,7 @@ package mgo
 
 import (
 	"context"
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"log"

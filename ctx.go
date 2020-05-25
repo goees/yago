@@ -11,7 +11,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	validatorv10 "github.com/go-playground/validator/v10"
-	"github.com/hulklab/yago/libs/validator"
+	"github.com/goees/yago/libs/validator"
 )
 
 type Ctx struct {

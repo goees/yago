@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hulklab/yago/libs/validator"
+	"github.com/goees/yago/libs/validator"
 	"github.com/spf13/cobra"
 )
 

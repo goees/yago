@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hulklab/yago/example/app/third/homeapi"
+	"github.com/goees/yago/example/app/third/homeapi"
 
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basecmd"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basecmd"
 	"github.com/spf13/cobra"
 )
 

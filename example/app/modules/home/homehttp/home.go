@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basehttp"
-	"github.com/hulklab/yago/example/app/g"
-	"github.com/hulklab/yago/libs/validator"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basehttp"
+	"github.com/goees/yago/example/app/g"
+	"github.com/goees/yago/libs/validator"
 
-	"github.com/hulklab/yago/example/app/modules/home/homemodel"
+	"github.com/goees/yago/example/app/modules/home/homemodel"
 )
 
 type HomeHttp struct {
