@@ -1,7 +1,7 @@
 package basetask
 
 import (
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 	"time"
 )
 

@@ -6,6 +6,7 @@ import (
 	"github.com/spf13/viper"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 )
 
@@ -52,7 +53,11 @@ func Hostname() string {
 
 func defaultCfgPath() string {
 	defaultDir, _ := filepath.Abs(filepath.Dir(os.Args[0]))
-	return fmt.Sprintf("%s/app.toml", defaultDir)
+	if runtime.GOOS == "windows" {
+		return fmt.Sprintf("%s\\app.toml", defaultDir)
+	} else {
+		return fmt.Sprintf("%s/app.toml", defaultDir)
+	}
 }
 
 func initConfig() {

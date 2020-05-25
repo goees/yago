@@ -2,7 +2,7 @@ package logger
 
 import (
 	"fmt"
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 	"github.com/natefinch/lumberjack"
 	"github.com/sirupsen/logrus"
 	"runtime"

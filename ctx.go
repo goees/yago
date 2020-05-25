@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hulklab/yago/libs/validator"
+	"github.com/goees/yago/libs/validator"
 )
 
 type Ctx struct {

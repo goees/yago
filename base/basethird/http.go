@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hulklab/yago/coms/logger"
+	"github.com/goees/yago/coms/logger"
 	"github.com/levigross/grequests"
 	"github.com/sirupsen/logrus"
 )

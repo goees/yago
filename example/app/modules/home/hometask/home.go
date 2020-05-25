@@ -1,8 +1,8 @@
 package hometask
 
 import (
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/base/basetask"
+	"github.com/goees/yago"
+	"github.com/goees/yago/base/basetask"
 	"log"
 	"time"
 )

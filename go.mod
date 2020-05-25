@@ -1,4 +1,4 @@
-module github.com/hulklab/yago
+module github.com/goees/yago
 
 go 1.12
 
@@ -12,7 +12,7 @@ require (
 	github.com/gin-contrib/gzip v0.0.1
 	github.com/gin-contrib/pprof v1.2.1
 	github.com/gin-gonic/gin v1.4.0
-	github.com/go-sql-driver/mysql v1.4.1
+	github.com/goees/go-mysql v1.5.1
 	github.com/go-xorm/xorm v0.7.6
 	github.com/golang/protobuf v1.3.1
 	github.com/google/go-querystring v1.0.0 // indirect
