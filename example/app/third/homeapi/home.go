@@ -3,12 +3,11 @@ package homeapi
 import (
 	"context"
 	"fmt"
-	"io"
-
-	"google.golang.org/grpc"
-
 	"github.com/goees/yago"
 	"github.com/goees/yago/base/basethird"
+	"github.com/golang/protobuf/proto"
+	"google.golang.org/grpc"
+
 	pb "github.com/goees/yago/example/app/third/homeapi/homepb"
 )
 
@@ -70,64 +69,26 @@ func (a *HomeApi) UploadFile(filepath string) string {
 
 // eg. homeapi.New().RpcHello()
 func (a *HomeApi) RpcHello() {
-	a.SetBeforeUnaryClientInterceptor(func(ctx context.Context, method string, req, reply interface{}, cc *grpc.ClientConn, opts ...grpc.CallOption) error {
-		fmt.Println("method:", method, "before")
-		return nil
-	})
-	a.SetAfterUnaryClientInterceptor(func(ctx context.Context, method string, req, reply interface{}, cc *grpc.ClientConn, opts ...grpc.CallOption) error {
-		fmt.Println("method:", method, "after")
-		return nil
-	})
 
 	var name = "zhangsan"
 
-	req := &pb.HelloRequest{Name: name}
+	rep, err := a.Call(func(conn *grpc.ClientConn, ctx context.Context) (rep proto.Message, e error) {
 
-	conn, _ := a.GetConn()
-	ctx, cancel := a.GetCtx()
-	defer cancel()
+		c := pb.NewHomeClient(conn)
 
-	c := pb.NewHomeClient(conn)
-	resp, err := c.Hello(ctx, req)
+		return c.Hello(ctx, &pb.HelloRequest{Name: name})
+
+	}, name)
 
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println("ok:", resp.Data)
-}
 
-func (a *HomeApi) RpcHelloStream() {
-
-	var name = "zhangsan"
-	req := &pb.HelloRequest{Name: name}
-
-	a.SetBeforeStreamClientInterceptor(func(ctx context.Context, desc *grpc.StreamDesc, cc *grpc.ClientConn, method string, opts ...grpc.CallOption) error {
-		fmt.Println("method:", method, "stop")
-		return nil
-	})
-
-	conn, _ := a.GetConn()
-	ctx, cancel := a.GetCtx()
-	defer cancel()
-
-	c := pb.NewHomeClient(conn)
-	stream, err := c.HelloStream(ctx, req)
-	if err != nil {
-		fmt.Println(err.Error())
-		return
-	}
-
-	for {
-		reply, err := stream.Recv()
-		if err == io.EOF {
-			break
-		}
-		if err != nil {
-			fmt.Println(err)
-			break
-		}
-
-		fmt.Println(reply)
+	v, ok := rep.(*pb.HelloReply)
+	if ok {
+		fmt.Println("ok:", v.Data)
+	} else {
+		fmt.Println("not match", v)
 	}
 }
