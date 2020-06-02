@@ -2,8 +2,8 @@ package basehttp
 
 import (
 	"github.com/gin-gonic/gin/binding"
-	"github.com/hulklab/yago"
-	"github.com/hulklab/yago/coms/logger"
+	"github.com/goees/yago"
+	"github.com/goees/yago/coms/logger"
 	"github.com/sirupsen/logrus"
 )
 

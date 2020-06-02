@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 
-	"github.com/hulklab/yago/base/basethird"
+	"github.com/goees/yago/base/basethird"
 )
 
 type homeApi struct {

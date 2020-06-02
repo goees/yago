@@ -6,12 +6,12 @@ import (
 	"io"
 	"log"
 
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 
 	"google.golang.org/grpc"
 
-	"github.com/hulklab/yago/base/basethird"
-	pb "github.com/hulklab/yago/example/app/third/homeapi/homepb"
+	"github.com/goees/yago/base/basethird"
+	pb "github.com/goees/yago/example/app/third/homeapi/homepb"
 )
 
 type homeRpcApi struct {

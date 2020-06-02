@@ -1,6 +1,6 @@
 package g
 
-import "github.com/hulklab/yago"
+import "github.com/goees/yago"
 
 var (
 	// Your err defined here

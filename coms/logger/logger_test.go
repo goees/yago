@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 	"github.com/sirupsen/logrus"
 	"testing"
 	"time"

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	pb "github.com/hulklab/yago/example/app/modules/home/homerpc/homepb"
+	pb "github.com/goees/yago/example/app/modules/home/homerpc/homepb"
 )
 
 const (

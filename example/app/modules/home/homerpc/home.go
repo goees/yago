@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hulklab/yago"
+	"github.com/goees/yago"
 
-	pb "github.com/hulklab/yago/example/app/modules/home/homerpc/homepb"
+	pb "github.com/goees/yago/example/app/modules/home/homerpc/homepb"
 )
 
 type HomeRpc struct {
